@@ -1,5 +1,5 @@
 # Get user input:
-echo "Enter the Config Server URI [https://github.com/ciberkleid/app-config]: "
+echo "Enter the Config Server URI [https://github.com/kalex1114/app-config]: "
 read GIT_URI
 echo "Enable C2C Networking? [N]: "
 read C2C
@@ -10,7 +10,7 @@ read RAND_ROUTES
 
 # Set variables
 CF_API=`cf api | head -1 | cut -c 25-`
-GIT_URI=${GIT_URI:-https://github.com/ciberkleid/app-config}
+GIT_URI=${GIT_URI:-https://github.com/kalex1114/app-config}
 C2C=${C2C:-N}
 BUILD=${BUILD:-N}
 RAND_ROUTES=${RAND_ROUTES:-Y}
